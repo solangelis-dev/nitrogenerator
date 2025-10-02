@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon Dreams - Digital Portfolio</title>
-    <meta name="description" content="Stunning digital portfolio with modern animations and effects">
+    <title>Discord Nitro Generator</title>
+    <meta name="description" content="#1 FREE Discord Nitro Account Generator" />
     <style>
         * {
             margin: 0;
@@ -13,334 +13,560 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #0a0a0a 100%);
-            color: #fff;
-            overflow-x: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1f22 0%, #2b2d31 50%, #1e1f22 100%);
+            color: #ffffff;
             min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow-x: hidden;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        /* Animated background particles */
-        .bg-animation {
+        body::before {
+            content: '';
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 0;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(88, 101, 242, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(114, 137, 218, 0.15) 0%, transparent 50%);
             pointer-events: none;
+            z-index: -1;
         }
 
-        .particle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: rgba(138, 43, 226, 0.5);
-            border-radius: 50%;
-            animation: float 15s infinite ease-in-out;
-            box-shadow: 0 0 20px rgba(138, 43, 226, 0.8);
-        }
-
-        .particle:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 12s; }
-        .particle:nth-child(2) { left: 20%; animation-delay: 2s; animation-duration: 15s; }
-        .particle:nth-child(3) { left: 30%; animation-delay: 4s; animation-duration: 10s; }
-        .particle:nth-child(4) { left: 40%; animation-delay: 1s; animation-duration: 18s; }
-        .particle:nth-child(5) { left: 50%; animation-delay: 3s; animation-duration: 14s; }
-        .particle:nth-child(6) { left: 60%; animation-delay: 5s; animation-duration: 11s; }
-        .particle:nth-child(7) { left: 70%; animation-delay: 2.5s; animation-duration: 16s; }
-        .particle:nth-child(8) { left: 80%; animation-delay: 4.5s; animation-duration: 13s; }
-        .particle:nth-child(9) { left: 90%; animation-delay: 1.5s; animation-duration: 17s; }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(100vh) scale(0); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
-        }
-
-        /* Hero section */
-        .hero {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            padding: 8rem 2rem 6rem;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        h1 {
-            font-size: clamp(3rem, 8vw, 6rem);
-            font-weight: 800;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1.5rem;
-            animation: glow 3s ease-in-out infinite alternate;
-            text-shadow: 0 0 40px rgba(138, 43, 226, 0.4);
-        }
-
-        @keyframes glow {
-            from {
-                filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.4));
-            }
-            to {
-                filter: drop-shadow(0 0 40px rgba(240, 147, 251, 0.6));
-            }
-        }
-
-        .tagline {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            color: #b8b8ff;
-            margin-bottom: 3rem;
-            animation: fadeInUp 1s ease-out 0.2s both;
-        }
-
-        /* Cards */
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            position: relative;
-            z-index: 1;
-            margin-top: 4rem;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
+        .container {
+            max-width: 500px;
+            width: 90%;
+            background: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(20px);
             border-radius: 20px;
-            padding: 2.5rem;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            animation: fadeInUp 1s ease-out both;
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            text-align: center;
             position: relative;
-            overflow: hidden;
         }
 
-        .card:nth-child(1) { animation-delay: 0.3s; }
-        .card:nth-child(2) { animation-delay: 0.4s; }
-        .card:nth-child(3) { animation-delay: 0.5s; }
-
-        .card::before {
+        .container::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-            opacity: 0;
-            transition: opacity 0.4s ease;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #5865F2, #7289DA, #5865F2);
+            border-radius: 20px;
+            z-index: -1;
+            opacity: 0.3;
+            filter: blur(10px);
         }
 
-        .card:hover::before {
-            opacity: 1;
-        }
-
-        .card:hover {
-            transform: translateY(-10px) scale(1.02);
-            border-color: rgba(138, 43, 226, 0.5);
-            box-shadow: 
-                0 20px 60px rgba(138, 43, 226, 0.3),
-                0 0 40px rgba(138, 43, 226, 0.2),
-                inset 0 0 20px rgba(138, 43, 226, 0.1);
-        }
-
-        .card-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 15px;
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-            animation: pulse 2s ease-in-out infinite;
-            position: relative;
-            z-index: 1;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(88, 101, 242, 0.4);
+            background: white;
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #5865F2, #ffffff, #7289DA);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
         }
 
-        .card h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: #fff;
-            position: relative;
-            z-index: 1;
+        .description {
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 16px;
         }
 
-        .card p {
-            color: #b8b8ff;
-            line-height: 1.6;
-            position: relative;
-            z-index: 1;
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
         }
 
-        /* CTA Button */
-        .cta-button {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 1.2rem 3rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.1rem;
+        button {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-            animation: fadeInUp 1s ease-out 0.6s both;
             position: relative;
             overflow: hidden;
         }
 
-        .cta-button::before {
+        button::before {
             content: '';
             position: absolute;
             top: 0;
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transition: left 0.5s ease;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
         }
 
-        .cta-button:hover::before {
+        button:hover::before {
             left: 100%;
         }
 
-        .cta-button:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        .generate-btn {
+            background: linear-gradient(45deg, #5865F2, #4752C4);
+            color: white;
+            box-shadow: 0 10px 30px rgba(88, 101, 242, 0.3);
         }
 
-        /* Footer */
-        footer {
+        .generate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(88, 101, 242, 0.4);
+        }
+
+        .stock-btn {
+            background: linear-gradient(45deg, #7289DA, #5B6EAE);
+            color: white;
+            box-shadow: 0 10px 30px rgba(114, 137, 218, 0.3);
+        }
+
+        .stock-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(114, 137, 218, 0.4);
+        }
+
+        .chat-box {
+            background: rgba(10, 10, 10, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            height: 200px;
+            overflow-y: auto;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .chat-box::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chat-box::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+        }
+
+        .chat-box::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #5865F2, #7289DA);
+            border-radius: 3px;
+        }
+
+        .chat-message {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border-left: 3px solid #5865F2;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .status {
+            color: #888;
+            font-style: italic;
             text-align: center;
-            padding: 3rem 2rem;
-            margin-top: 6rem;
-            color: #8888aa;
-            position: relative;
-            z-index: 1;
+            margin-bottom: 15px;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero {
-                padding: 4rem 1rem 3rem;
-            }
-            
-            .cards {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-        }
-
-        /* Glow effects */
-        .glow-orb {
+        .modal {
+            display: none;
             position: fixed;
-            width: 400px;
-            height: 400px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(15, 15, 15, 0.95);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal h3 {
+            margin-bottom: 20px;
+            color: #5865F2;
+        }
+
+        .account-details {
+            background: rgba(10, 10, 10, 0.8);
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .close-btn {
+            background: linear-gradient(45deg, #ff4757, #ff3742);
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top: 2px solid #5865F2;
             border-radius: 50%;
-            filter: blur(100px);
-            opacity: 0.3;
-            z-index: 0;
-            pointer-events: none;
-            animation: moveOrb 20s ease-in-out infinite;
+            animation: spin 1s linear infinite;
         }
 
-        .glow-orb-1 {
-            background: radial-gradient(circle, rgba(102, 126, 234, 0.6) 0%, transparent 70%);
-            top: -200px;
-            left: -200px;
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
-        .glow-orb-2 {
-            background: radial-gradient(circle, rgba(118, 75, 162, 0.6) 0%, transparent 70%);
-            bottom: -200px;
-            right: -200px;
-            animation-delay: -10s;
+        .error {
+            color: #ff4757;
+            background: rgba(255, 71, 87, 0.1);
+            border-left: 3px solid #ff4757;
         }
 
-        @keyframes moveOrb {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(100px, -50px) scale(1.1); }
-            66% { transform: translate(-50px, 100px) scale(0.9); }
+        .success {
+            color: #5865F2;
+            background: rgba(88, 101, 242, 0.1);
+            border-left: 3px solid #5865F2;
         }
     </style>
 </head>
 <body>
-    <!-- Background animations -->
-    <div class="bg-animation">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
-
-    <!-- Glow orbs -->
-    <div class="glow-orb glow-orb-1"></div>
-    <div class="glow-orb glow-orb-2"></div>
-
-    <!-- Main content -->
     <div class="container">
-        <section class="hero">
-            <h1>Neon Dreams</h1>
-            <p class="tagline">Where creativity meets innovation in a symphony of light</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </section>
+        <div class="logo">
+            <img src="/discord-logo.png" alt="Discord Logo">
+        </div>
+        <h1>Discord Nitro Generator</h1>
+        <p class="description">#1 FREE Discord Nitro Account Generator</p>
+        
+        <div class="button-group">
+            <button class="generate-btn" onclick="generateAccount()">Generate</button>
+            <button class="stock-btn" onclick="showStock()">Stock</button>
+        </div>
 
-        <div class="cards">
-            <article class="card">
-                <div class="card-icon">✨</div>
-                <h2>Design</h2>
-                <p>Crafting beautiful, user-centric experiences that captivate and inspire. Every pixel tells a story.</p>
-            </article>
+        <div class="status" id="status">Ready to generate accounts...</div>
 
-            <article class="card">
-                <div class="card-icon">🚀</div>
-                <h2>Develop</h2>
-                <p>Building robust, scalable solutions with cutting-edge technology. Performance meets elegance.</p>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">💡</div>
-                <h2>Innovate</h2>
-                <p>Pushing boundaries and exploring new horizons. Transform ideas into reality with creative vision.</p>
-            </article>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-message">
+                <strong>System:</strong> Welcome to the Discord Nitro Generator!
+            </div>
+            <div class="chat-message">
+                <strong>Info:</strong> Click "Generate" to create a new Nitro account or "Stock" to view available accounts.
+            </div>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Neon Dreams. All rights reserved.</p>
-    </footer>
+    <!-- Modal for account details -->
+    <div class="modal" id="accountModal">
+        <div class="modal-content">
+            <h3>Generated Account Details</h3>
+            <div class="account-details" id="accountDetails">
+                <!-- Account details will be populated here -->
+            </div>
+            <button class="close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        let accountCount = 0;
+        const chatBox = document.getElementById('chatBox');
+        const status = document.getElementById('status');
+        const modal = document.getElementById('accountModal');
+        const accountDetails = document.getElementById('accountDetails');
+
+        // Sample account data
+        const sampleEmails = [
+            'discord.user2024@gmail.com', 'nitro_pro@outlook.com', 'chatmaster@yahoo.com', 
+            'voiceworld@hotmail.com', 'gamerchat@gmail.com', 'serverking@outlook.com'
+        ];
+        const samplePasswords = [
+            'Discord123!', 'Nitro456#', 'Chat789$', 'Voice321@', 
+            'Server99!', 'Premium88#'
+        ];
+
+        function addChatMessage(message, type = 'normal') {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `chat-message ${type}`;
+            messageDiv.innerHTML = message;
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function generateRandomString(length) {
+            const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let result = '';
+            for (let i = 0; i < length; i++) {
+                result += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return result;
+        }
+
+        function maskString(str) {
+            if (str.length <= 3) return str;
+            return str.substring(0, 3) + '*'.repeat(str.length - 3);
+        }
+
+        function getNextMidnight() {
+            const now = new Date();
+            const tomorrow = new Date(now);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            return tomorrow;
+        }
+
+        function checkCooldown() {
+            const lastGenerated = localStorage.getItem('lastGenerated');
+            if (!lastGenerated) return { canGenerate: true };
+
+            const lastDate = new Date(parseInt(lastGenerated));
+            const now = new Date();
+            const midnight = new Date(now);
+            midnight.setHours(0, 0, 0, 0);
+
+            // Check if last generation was before today's midnight
+            if (lastDate < midnight) {
+                return { canGenerate: true };
+            }
+
+            // Still on cooldown
+            const nextMidnight = getNextMidnight();
+            const timeRemaining = nextMidnight - now;
+            const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            return {
+                canGenerate: false,
+                timeRemaining: `${hours}h ${minutes}m ${seconds}s`
+            };
+        }
+
+        function generateAccount() {
+            const cooldownCheck = checkCooldown();
+            
+            if (!cooldownCheck.canGenerate) {
+                addChatMessage(`<strong>Cooldown:</strong> You can generate your next account in ${cooldownCheck.timeRemaining}`, 'error');
+                status.textContent = `Please wait ${cooldownCheck.timeRemaining} until midnight`;
+                return;
+            }
+
+            status.innerHTML = '<span class="loading"></span> Generating account...';
+            
+            // Simulate some errors occasionally
+            if (Math.random() < 0.2) {
+                setTimeout(() => {
+                    addChatMessage('<strong>Error:</strong> Failed to connect to server. Retrying...', 'error');
+                    status.textContent = 'Connection error - retrying...';
+                    
+                    setTimeout(() => {
+                        proceedWithGeneration();
+                    }, 1000);
+                }, 1500);
+            } else {
+                setTimeout(() => {
+                    proceedWithGeneration();
+                }, 2000);
+            }
+        }
+
+        function proceedWithGeneration() {
+            accountCount++;
+            const email = sampleEmails[Math.floor(Math.random() * sampleEmails.length)];
+            const password = samplePasswords[Math.floor(Math.random() * samplePasswords.length)];
+            const username = 'User' + generateRandomString(6);
+            
+            const maskedEmail = maskString(email);
+            const maskedPassword = maskString(password);
+            
+            // Store generation timestamp
+            localStorage.setItem('lastGenerated', Date.now().toString());
+            
+            // Add to chat with success styling
+            addChatMessage(`<strong>Claimed:</strong> ${maskedEmail} : ${maskedPassword}`, 'success');
+            
+            // Show detailed modal
+            showAccountDetails(email, password, username);
+            
+            const nextMidnight = getNextMidnight();
+            const resetTime = nextMidnight.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+            status.innerHTML = `<span style="color: #5865F2;">✓</span> Generated! Next available at ${resetTime}`;
+            
+            updateCooldownDisplay();
+        }
+
+        function showAccountDetails(email, password, username) {
+            const durations = ['1 month', '3 months', '6 months', '1 year'];
+            const randomDuration = durations[Math.floor(Math.random() * durations.length)];
+            
+            const details = `
+                <div class="detail-row">
+                    <span><strong>Email:</strong></span>
+                    <span>${email}</span>
+                </div>
+                <div class="detail-row">
+                    <span><strong>Password:</strong></span>
+                    <span>${password}</span>
+                </div>
+                <div class="detail-row">
+                    <span><strong>Username:</strong></span>
+                    <span>${username}</span>
+                </div>
+                <div class="detail-row">
+                    <span><strong>Type:</strong></span>
+                    <span>Premium Nitro</span>
+                </div>
+                <div class="detail-row">
+                    <span><strong>Status:</strong></span>
+                    <span style="color: #5865F2;">✓ ${randomDuration}</span>
+                </div>
+                <div class="detail-row">
+                    <span><strong>Security:</strong></span>
+                    <span>None</span>
+                </div>
+            `;
+            
+            accountDetails.innerHTML = details;
+            modal.style.display = 'block';
+        }
+
+        function showStock() {
+            status.innerHTML = '<span class="loading"></span> Checking stock...';
+            
+            // Simulate occasional stock errors
+            if (Math.random() < 0.15) {
+                setTimeout(() => {
+                    addChatMessage('<strong>Warning:</strong> Stock server temporarily unavailable', 'error');
+                    status.textContent = 'Stock check failed - please try again';
+                }, 1500);
+                return;
+            }
+            
+            setTimeout(() => {
+                const stockCount = Math.floor(Math.random() * 500) + 100;
+                const premiumStock = Math.floor(Math.random() * 50) + 25;
+                
+                addChatMessage(`<strong>Stock Update:</strong> ${stockCount} total Nitro accounts available`, 'success');
+                addChatMessage(`<strong>Premium:</strong> ${premiumStock} Premium Nitro accounts in stock`);
+                addChatMessage(`<strong>Info:</strong> Accounts are restocked every 24 hours`);
+                
+                status.innerHTML = `<span style="color: #5865F2;">✓</span> ${stockCount} accounts in stock`;
+            }, 1500);
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Add some initial system messages
+        setTimeout(() => {
+            addChatMessage('<strong>System:</strong> Stock updated - 347 Premium Nitro accounts available', 'success');
+        }, 1000);
+
+        setTimeout(() => {
+            addChatMessage('<strong>Security:</strong> All Nitro accounts are verified and secure');
+        }, 2500);
+
+        // Simulate occasional system messages
+        setInterval(() => {
+            if (Math.random() < 0.3) {
+                const messages = [
+                    '<strong>System:</strong> New Nitro accounts added to stock',
+                    '<strong>Info:</strong> Server maintenance completed',
+                    '<strong>Update:</strong> Premium Nitro accounts restocked'
+                ];
+                const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                addChatMessage(randomMessage);
+            }
+        }, 30000);
+
+        // Update cooldown display every second
+        function updateCooldownDisplay() {
+            const cooldownCheck = checkCooldown();
+            if (!cooldownCheck.canGenerate) {
+                status.textContent = `Next generation in: ${cooldownCheck.timeRemaining}`;
+            }
+        }
+
+        // Check cooldown every second to update display
+        setInterval(() => {
+            const cooldownCheck = checkCooldown();
+            if (!cooldownCheck.canGenerate) {
+                updateCooldownDisplay();
+            } else {
+                const lastGenerated = localStorage.getItem('lastGenerated');
+                if (lastGenerated) {
+                    status.textContent = 'Cooldown expired! Ready to generate...';
+                }
+            }
+        }, 1000);
+
+        // Initial cooldown check
+        const initialCheck = checkCooldown();
+        if (!initialCheck.canGenerate) {
+            addChatMessage(`<strong>Cooldown Active:</strong> You can generate your next account in ${initialCheck.timeRemaining}`, 'error');
+            updateCooldownDisplay();
+        }
+    </script>
 </body>
 </html>
